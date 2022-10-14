@@ -13,6 +13,8 @@ module.exports = {
       '2xl': 32,
     },
     colors: {
+      transparent: 'transparent',
+      black: '#000000',
       gray: '#5E5E5E',
       white: '#FFFFFF',
       light: '#D4D4D4',
@@ -22,8 +24,7 @@ module.exports = {
     },
     extend: {
       fontFamily: { 
-        'sans-serif': 'Yeseva One',
-        sans: 'Roboto',
+        sans: 'Poppins, sans-serif',
       },
     },
   },
