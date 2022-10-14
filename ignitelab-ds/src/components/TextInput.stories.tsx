@@ -1,16 +1,16 @@
-import { Meta, StoryObj } from '@storybook/react';
-import { TextInputComponent, TextInputRootProps } from './TextInput';
-import { Envelope } from 'phosphor-react';
+import { Meta, StoryObj } from '@storybook/react'
+import { Envelope } from 'phosphor-react'
+import { TextInput, TextInputRootProps } from './TextInput'
 
-export default { 
+export default {
   title: 'Components/TextInput',
-  component: TextInputComponent.Root,
+  component: TextInput.Root,
   args: {
     children: [
-      <TextInputComponent.Icon>
+      <TextInput.Icon>
         <Envelope />
-      </TextInputComponent.Icon>,
-      <TextInputComponent.Input placeholder="Type your email address"/>
+      </TextInput.Icon>,
+      <TextInput.Input placeholder="Type your e-mail address" />
     ],
   },
   argTypes: {
@@ -18,15 +18,14 @@ export default {
       table: {
         disable: true,
       }
-    }
-  },
-} as Meta<TextInputRootProps>;
+    },
+  }
+} as Meta<TextInputRootProps>
 
-export const Default: StoryObj<TextInputRootProps> = {};
+export const Default: StoryObj<TextInputRootProps> = {}
 
 export const WithoutIcon: StoryObj<TextInputRootProps> = {
   args: {
-    children:     
-    <TextInputComponent.Input placeholder="Type your email address"/>
+    children: <TextInput.Input placeholder="Type your e-mail address" />
   }
-};
+}

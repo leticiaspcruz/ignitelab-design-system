@@ -5,6 +5,8 @@ import { ReactNode } from 'react';
 export interface ButtonProps {
   children: ReactNode,
   asChild?: boolean,
+  type?: string,
+  className?: string,
 }
 
 export function Button ({ children, asChild }: ButtonProps) {

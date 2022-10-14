@@ -4,9 +4,11 @@ import { ReactNode } from 'react';
 import * as CheckboxPrimitive from  '@radix-ui/react-checkbox';
 import { Check } from 'phosphor-react';
 
-export interface CheckboxProps {};
+export interface CheckboxProps {
+  id?: string,
+};
 
-export function Checkbox ({}: CheckboxProps) {
+export function Checkbox ({ id }: CheckboxProps) {
   return (
     <CheckboxPrimitive.Root
       className="w-6 h-6 p-[2px] bg-gray rounded"
