@@ -64,12 +64,12 @@ export function App() {
 
       <footer className="flex flex-col items-center gap-4 mt-8">
         <Text asChild size="sm">
-          <a href="" className="text-greenDark underline hover:text-gray-200">
+          <a href="" className="text-gray underline hover:text-gray-200">
             esqueceu sua senha?
           </a>
         </Text>
         <Text asChild size="sm">
-          <a href="" className="text-gray underline">
+          <a href="" className="text-greenDark underline">
             não possui conta? crie uma agora!
           </a>
         </Text>
